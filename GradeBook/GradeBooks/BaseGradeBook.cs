@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Linq;
-
 using GradeBook.Enums;
 using System.Collections.Generic;
 using System.IO;
@@ -16,7 +15,6 @@ namespace GradeBook.GradeBooks
         public GradeBookType Type {get; set;}
 
         public bool IsWeighted { get; set; }
-
         public BaseGradeBook(string name, bool IsWeighted)
         {
             Name = name;
