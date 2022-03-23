@@ -39,6 +39,7 @@ namespace GradeBook.UserInterfaces
                 Console.WriteLine("Command not valid, Create requires a name and type od gradebook.");
             }
             var name = parts[1];
+            var isWeighted = bool.Parse(parts[3]);
             if( parts[2].ToLower() == "standard")
             {
                 _ = new StandardGradeBook(name, isWeighted);
