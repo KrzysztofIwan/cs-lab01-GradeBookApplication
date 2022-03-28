@@ -50,6 +50,10 @@ namespace GradeBook.GradeBooks
             {
                 return 'D';
             }
+            else
+            {
+                return 'F';
+            }
            
         }   
     }
