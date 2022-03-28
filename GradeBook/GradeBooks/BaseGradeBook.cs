@@ -15,11 +15,11 @@ namespace GradeBook.GradeBooks
         public GradeBookType Type {get; set;}
 
         public bool IsWeighted { get; set; }
-        public BaseGradeBook(string name, bool IsWeighted)
+        public BaseGradeBook(string name, bool IsWeight)
         {
             Name = name;
             Students = new List<Student>();
-            bool isWeighted = IsWeighted;
+            bool isWeighted = IsWeight;
         }
 
         public void AddStudent(Student student)
@@ -108,7 +108,7 @@ namespace GradeBook.GradeBooks
 
         public virtual double GetGPA(char letterGrade, StudentType studentType)
         {
-           int GPA = 0;
+            int GPA = 0;            
             switch (letterGrade)
             {
                 case 'A':
